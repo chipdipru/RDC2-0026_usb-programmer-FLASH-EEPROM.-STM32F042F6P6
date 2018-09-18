@@ -1,0 +1,2 @@
+# RDC2-0026_usb-programmer-FLASH-EEPROM.-STM32F042F6P6
+USB программатор FLASH и EEPROM памяти. STM32F042F6P6
