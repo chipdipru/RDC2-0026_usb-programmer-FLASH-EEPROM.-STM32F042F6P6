@@ -1,0 +1,73 @@
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_I2C_PLS.png
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_I2C_SOIC_DIP_PBS.png
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_MICROWIRE_PLS.png
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_MICROWIRE_SOIC.png
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_SPI_PLS.png
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_SPI_SOIC_16.png
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_SPI_SOIC_DIP_PBS.png
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\RDC2_0026.exe.config
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\RDC2_0026.exe
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\RDC2_0026.pdb
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\LibUsbDotNet.dll
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\MainWindow.g.cs
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\App.g.cs
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026_Content.g.cs
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026_MarkupCompile.cache
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026_MarkupCompile.lref
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\App.baml
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\MainWindow.baml
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\ResourceDictionary.baml
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.g.resources
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.Properties.Resources.resources
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.csproj.GenerateResource.Cache
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.exe
+D:\work\Чип и Дип\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.pdb
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_I2C_PLS.png
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_I2C_SOIC_DIP_PBS.png
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_MICROWIRE_PLS.png
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_MICROWIRE_SOIC.png
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_SPI_PLS.png
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_SPI_SOIC_16.png
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_SPI_SOIC_DIP_PBS.png
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\RDC2_0026.exe.config
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\RDC2_0026.exe
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\RDC2_0026.pdb
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\LibUsbDotNet.dll
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\MainWindow.g.cs
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\App.g.cs
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026_Content.g.cs
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026_MarkupCompile.cache
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026_MarkupCompile.lref
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\App.baml
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\MainWindow.baml
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\ResourceDictionary.baml
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.g.resources
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.Properties.Resources.resources
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.csproj.GenerateResource.Cache
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.exe
+D:\work\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.pdb
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_I2C_PLS.png
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_I2C_SOIC_DIP_PBS.png
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_MICROWIRE_PLS.png
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_MICROWIRE_SOIC.png
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_SPI_PLS.png
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_SPI_SOIC_16.png
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\images\RDC2-0026_SPI_SOIC_DIP_PBS.png
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\RDC2_0026.exe.config
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\RDC2_0026.exe
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\RDC2_0026.pdb
+F:\WindowsProjects\RDC2_0026\RDC2_0026\bin\Debug\LibUsbDotNet.dll
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\MainWindow.g.cs
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\App.g.cs
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026_Content.g.cs
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026_MarkupCompile.cache
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026_MarkupCompile.lref
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\App.baml
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\MainWindow.baml
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\ResourceDictionary.baml
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.g.resources
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.Properties.Resources.resources
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.csproj.GenerateResource.Cache
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.exe
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.pdb
+F:\WindowsProjects\RDC2_0026\RDC2_0026\obj\Debug\RDC2_0026.csprojResolveAssemblyReference.cache

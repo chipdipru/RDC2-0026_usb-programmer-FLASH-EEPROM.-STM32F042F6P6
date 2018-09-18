@@ -1,0 +1,69 @@
+﻿<Window x:Class="RDC2_0026.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RDC2_0026"
+        mc:Ignorable="d" d:DataContext="{d:DesignInstance local:MainWindow}"
+        Title="Программатор памяти RDC2-0026" Height="690" Width="1020" MinWidth="1020" MinHeight="690" Icon="images/RDC_logo_r.png" MaxWidth="1020" Closing="WindowClosing">
+    <Window.Background>
+        <ImageBrush TileMode="Tile" ImageSource="images/back.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Border x:Name="ChipBorder" Style="{StaticResource BorderStyle}" HorizontalAlignment="Left" Height="410" Margin="10,10,0,0" VerticalAlignment="Top" Width="305">
+            <Grid>
+                <Label x:Name="Namelabel" Style="{StaticResource LabelStyle}" Content="Наименование" HorizontalAlignment="Left" Margin="0,75,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="ChipName" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Left" Height="23" Margin="130,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                <Label x:Name="Manuflabel" Style="{StaticResource LabelStyle}" Content="Производитель" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="Manufacture" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Left" Height="23" Margin="130,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                <Label x:Name="VolumeLabel" Style="{StaticResource LabelStyle}" Content="Объем" HorizontalAlignment="Left" Margin="0,195,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="TypeLabel" Style="{StaticResource LabelStyle}" Content="Тип" HorizontalAlignment="Left" Margin="0,155,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="TypeСomboBox" HorizontalAlignment="Left" Margin="130,160,0,0" VerticalAlignment="Top" Width="160" SelectedIndex="0" SelectionChanged="TypeChanged"/>
+                <Label x:Name="PageSizeLabel" Style="{StaticResource LabelStyle}" Content="Размер страницы" HorizontalAlignment="Left" Margin="0,235,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="OrgLabel" Style="{StaticResource LabelStyle}" Content="Организация" HorizontalAlignment="Left" Margin="0,275,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="OrgСomboBox" HorizontalAlignment="Left" Margin="130,280,0,0" VerticalAlignment="Top" Width="160" SelectedIndex="0"/>
+                <Label x:Name="FreqLabel" Style="{StaticResource LabelStyle}" Content="Тактовая частота" HorizontalAlignment="Left" Margin="0,315,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="VolumeСomboBox" HorizontalAlignment="Left" Margin="130,200,0,0" VerticalAlignment="Top" Width="160" SelectedIndex="0"/>
+                <ComboBox x:Name="PageSizeСomboBox" HorizontalAlignment="Left" Margin="130,240,0,0" VerticalAlignment="Top" Width="160" SelectedIndex="0"/>
+                <ComboBox x:Name="FreqСomboBox" HorizontalAlignment="Left" Margin="130,320,0,0" VerticalAlignment="Top" Width="160" SelectedIndex="0"/>
+                <Label x:Name="ConnectionLabel" Style="{StaticResource LabelStyle}" Content="Подключение" HorizontalAlignment="Left" Margin="0,355,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ConnectСomboBox" HorizontalAlignment="Left" Margin="130,360,0,0" VerticalAlignment="Top" Width="160" SelectedIndex="0" SelectionChanged="ConnectСomboBoxSelectionChanged"/>
+                <Label Style="{StaticResource LabelStyle}" Content="Микросхема памяти" Margin="75,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <Button x:Name="ChooseChipbutton" Content="Выбрать" HorizontalAlignment="Left" Margin="45,40,0,0" VerticalAlignment="Top" Width="75" Click="ChooseChipbuttonClick"/>
+                <Button x:Name="SaveChipbutton" Content="Сохранить" HorizontalAlignment="Left" Margin="170,40,0,0" VerticalAlignment="Top" Width="75" Click="SaveChipbuttonClick"/>
+            </Grid>
+        </Border>
+        <TextBox x:Name="InfoBox" Style="{StaticResource TextBoxStyle}" Margin="10,425,10,10" TextWrapping="Wrap"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                         ScrollViewer.VerticalScrollBarVisibility="Auto" AllowDrop="False" IsUndoEnabled="False" AcceptsReturn="True" FontSize="14" Foreground="#FF2323DE" IsReadOnly="True"/>
+        <Image x:Name="ConnectionImage" HorizontalAlignment="Left" Height="220" Margin="370,199,0,0" VerticalAlignment="Top" Width="582"/>
+        <Border x:Name="OperationBorder" Style="{StaticResource BorderStyle}" HorizontalAlignment="Left" Height="185" Margin="326,10,0,0" VerticalAlignment="Top" Width="671">
+            <Grid Margin="0">
+                <Button x:Name="Writebutton" Content="Записать" HorizontalAlignment="Left" Margin="185,70,0,0" VerticalAlignment="Top" Width="75" Click="WriteButtonClick"/>
+                <Label Style="{StaticResource LabelStyle}" Content="Действия" Margin="300,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <Button x:Name="Readbutton" Content="Прочитать" HorizontalAlignment="Left" Margin="185,120,0,0" VerticalAlignment="Top" Width="75" Click="ReadbuttonClick"/>
+                <TextBox x:Name="FileToWriteFromTextBox" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Left" Height="23" Margin="277,69,0,0" VerticalAlignment="Top" Width="170" IsReadOnly="True"/>
+                <Button x:Name="ChooseFileToWriteFromButton" Content="..." HorizontalAlignment="Left" Margin="464,70,0,0" VerticalAlignment="Top" Width="35" Click="ChooseFileToWriteFromButton_Click"/>
+                <TextBox x:Name="FileToReadToTextBox" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Left" Height="23" Margin="277,119,0,0" VerticalAlignment="Top" Width="170" IsReadOnly="True"/>
+                <Button x:Name="ChooseFileToReadToButton" Content="..." HorizontalAlignment="Left" Margin="464,120,0,0" VerticalAlignment="Top" Width="35" Click="ChooseFileToReadToButton_Click"/>
+                <CheckBox x:Name="CompareFilesCheck" Style="{StaticResource CheckBoxStyle}" Content="Сравнить с" HorizontalAlignment="Left" Margin="185,150,0,0" VerticalAlignment="Top" Checked="CompareFilesChecked" Unchecked="CompareFilesUnChecked"/>
+                <TextBox x:Name="FileToCompareToTextBox" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Left" Height="23" Margin="277,149,0,0" VerticalAlignment="Top" Width="170" IsEnabled="False" IsReadOnly="True"/>
+                <Button x:Name="FileToCompareToButton" Content="..." HorizontalAlignment="Left" Margin="464,150,0,0" VerticalAlignment="Top" Width="35" IsEnabled="False" Click="FileToCompareToButton_Click"/>
+                <Button x:Name="ConnectCheckbutton" Content="Проверить подключение" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="150" Click="ConnectCheckbutton_Click"/>
+                <Button x:Name="Erasebutton" Content="Стереть" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="150" Click="Erasebutton_Click"/>
+                <Button x:Name="BlankCheckbutton" Content="Проверить на чистоту" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="150" Click="BlankCheckbutton_Click"/>
+                <CheckBox x:Name="VerifyAfterWriteCheck" Style="{StaticResource CheckBoxStyle}" Content="Проверить после записи" HorizontalAlignment="Left" Margin="185,95,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="SigmaStudioFileCheck" Style="{StaticResource CheckBoxStyle}" Content="Файл SigmaStudio" HorizontalAlignment="Left" Margin="185,40,0,0" VerticalAlignment="Top"/>
+                <Border x:Name="StatusBorder" BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Right" Height="181" Margin="515,0,0,0" Width="152" VerticalAlignment="Top">
+                    <Grid>
+                        <Button x:Name="ReadStatusButton" Content="Прочитать" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="75" Click="ReadStatusButton_Click"/>
+                        <TextBox x:Name="ReadStatusTextBox" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Left" Height="23" Margin="104,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" IsReadOnly="True"/>
+                        <Button x:Name="WriteStatusButton" Content="Записать" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="75" Click="WriteStatusButton_Click"/>
+                        <TextBox x:Name="WriteStatusTextBox" Style="{StaticResource TextBoxStyle}" HorizontalAlignment="Left" Height="23" Margin="104,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
+                        <Label Style="{StaticResource LabelStyle}" Content="Регистр состояния" Margin="10,35,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
