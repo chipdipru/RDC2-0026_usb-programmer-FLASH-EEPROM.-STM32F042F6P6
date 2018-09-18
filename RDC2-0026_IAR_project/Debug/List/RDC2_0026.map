@@ -1,0 +1,529 @@
+###############################################################################
+#
+# IAR ELF Linker V7.60.1.11101/W32 for ARM                26/Sep/2017  11:41:38
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  D:\work\ArmProjects\RDC2-0026\Debug\Exe\RDC2_0026.out
+#    Map file     =  D:\work\ArmProjects\RDC2-0026\Debug\List\RDC2_0026.map
+#    Command line =  
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\DataTables.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\I2C_Memory.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\main.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\MICROWIRE_Memory.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\RDC2_0026_USB.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\SPI_Memory.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\startup_stm32f042.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\stm32f0xx_it.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\system_stm32f0xx.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usb_bsp.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usb_core.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usb_dcd.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usb_dcd_int.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usbd_core.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usbd_custom_hid_core.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usbd_desc.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usbd_ioreq.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usbd_pwr.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usbd_req.o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Obj\usbd_usr.o -o
+#        D:\work\ArmProjects\RDC2-0026\Debug\Exe\RDC2_0026.out --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        D:\work\ArmProjects\RDC2-0026\Debug\List\RDC2_0026.map --config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.4\arm\config\linker\ST\stm32f042x6.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x08007fff] { ro };
+"P2":  place in [from 0x20000000 to 0x200017ff] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xc0
+  .intvec            ro code  0x08000000    0xc0  startup_stm32f042.o [1]
+                            - 0x080000c0    0xc0
+
+"P1":                                     0x38cb
+  .text              ro code  0x080000c0   0x9a8  main.o [1]
+  .text              ro code  0x08000a68   0x208  RDC2_0026_USB.o [1]
+  .text              ro code  0x08000c70   0x388  I2C_Memory.o [1]
+  .text              ro code  0x08000ff8   0x2e8  SPI_Memory.o [1]
+  .text              ro code  0x080012e0   0x5bc  MICROWIRE_Memory.o [1]
+  .text              ro code  0x0800189c    0xe0  I32DivModFast.o [4]
+  .text              ro code  0x0800197c   0x2b4  usbd_core.o [1]
+  .text              ro code  0x08001c30   0x1f2  usbd_custom_hid_core.o [1]
+  .text              ro code  0x08001e22     0xa  usbd_usr.o [1]
+  .text              ro code  0x08001e2c     0x2  IntDivZer.o [4]
+  .text              ro code  0x08001e2e     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x08001e30   0x114  usb_bsp.o [1]
+  .text              ro code  0x08001f44   0x11c  usbd_desc.o [1]
+  .text              ro code  0x08002060   0x50c  usb_dcd.o [1]
+  .text              ro code  0x0800256c   0x5f6  usbd_req.o [1]
+  .text              ro code  0x08002b62    0xcc  usbd_ioreq.o [1]
+  .text              ro code  0x08002c2e     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x08002c30   0x4b4  usb_core.o [1]
+  .text              ro code  0x080030e4   0x464  usb_dcd_int.o [1]
+  .text              ro code  0x08003548   0x130  usbd_pwr.o [1]
+  .text              ro code  0x08003678    0x94  system_stm32f0xx.o [1]
+  .text              ro code  0x0800370c    0x3c  zero_init3.o [4]
+  .text              ro code  0x08003748    0x3c  packbits_init_single.o [4]
+  .rodata            const    0x08003784    0x2c  usbd_custom_hid_core.o [1]
+  .text              ro code  0x080037b0    0x28  data_init.o [4]
+  .iar.init_table    const    0x080037d8    0x20  - Linker created -
+  .text              ro code  0x080037f8    0x1c  stm32f0xx_it.o [1]
+  .text              ro code  0x08003814    0x1a  cmain.o [4]
+  .text              ro code  0x0800382e     0x4  low_level_init.o [3]
+  .text              ro code  0x08003832     0x8  exit.o [3]
+  .text              ro code  0x0800383a     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x0800383c     0xa  cexit.o [4]
+  .text              ro code  0x08003846     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x08003848    0x14  exit.o [5]
+  .rodata            const    0x0800385c    0x14  usbd_desc.o [1]
+  .rodata            const    0x08003870    0x10  usbd_desc.o [1]
+  .text              ro code  0x08003880    0x10  startup_stm32f042.o [1]
+  .rodata            const    0x08003890     0xc  DataTables.o [1]
+  .rodata            const    0x0800389c     0xc  usbd_desc.o [1]
+  .rodata            const    0x080038a8     0xc  usbd_desc.o [1]
+  .text              ro code  0x080038b4     0xc  cstartup_M.o [4]
+  .rodata            const    0x080038c0     0x8  DataTables.o [1]
+  .rodata            const    0x080038c8     0x8  usbd_custom_hid_core.o [1]
+  .rodata            const    0x080038d0     0x8  usbd_desc.o [1]
+  .rodata            const    0x080038d8     0x4  DataTables.o [1]
+  .rodata            const    0x080038dc     0x4  usbd_desc.o [1]
+  .text              ro code  0x080038e0     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038e2     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038e4     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038e6     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038e8     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038ea     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038ec     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038ee     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038f0     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038f2     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038f4     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038f6     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038f8     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038fa     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038fc     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x080038fe     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x08003900     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x08003902     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x08003904     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x08003906     0x2  startup_stm32f042.o [1]
+  .text              ro code  0x08003908     0x2  startup_stm32f042.o [1]
+  .rodata            const    0x0800390a     0x0  zero_init3.o [4]
+  .rodata            const    0x0800390a     0x0  packbits_init_single.o [4]
+  Initializer bytes  const    0x0800390a    0x81  <for P2-1>
+                            - 0x0800398b  0x38cb
+
+"P2", part 1 of 3:                          0x99
+  P2-1                        0x20000000    0x99  <Init block>
+    .data            inited   0x20000000     0x4  main.o [1]
+    .data            inited   0x20000004     0x4  main.o [1]
+    .data            inited   0x20000008    0x1c  usbd_core.o [1]
+    .data            inited   0x20000024     0x4  usbd_core.o [1]
+    .data            inited   0x20000028    0x24  usbd_custom_hid_core.o [1]
+    .data            inited   0x2000004c    0x1c  usbd_desc.o [1]
+    .data            inited   0x20000068    0x1c  usbd_desc.o [1]
+    .data            inited   0x20000084    0x14  usbd_usr.o [1]
+    .data            inited   0x20000098     0x1  RDC2_0026_USB.o [1]
+                            - 0x20000099    0x99
+
+"P2", part 2 of 3:                         0x400
+  CSTACK                      0x200000a0   0x400  <Block>
+    CSTACK           uninit   0x200000a0   0x400  <Block tail>
+                            - 0x200004a0   0x400
+
+"P2", part 3 of 3:                        0x11f4
+  .bss               zero     0x200004a0  0x1000  main.o [1]
+  .bss               zero     0x200014a0    0xc8  RDC2_0026_USB.o [1]
+  .bss               zero     0x20001568    0x40  RDC2_0026_USB.o [1]
+  .bss               zero     0x200015a8    0x40  usbd_custom_hid_core.o [1]
+  .bss               zero     0x200015e8    0x40  usbd_req.o [1]
+  .bss               zero     0x20001628    0x18  main.o [1]
+  .bss               zero     0x20001640    0x18  main.o [1]
+  .bss               zero     0x20001658     0x4  MICROWIRE_Memory.o [1]
+  .bss               zero     0x2000165c     0x4  MICROWIRE_Memory.o [1]
+  .bss               zero     0x20001660     0x4  RDC2_0026_USB.o [1]
+  .bss               zero     0x20001664     0x4  usb_dcd.o [1]
+  .bss               zero     0x20001668     0x4  usbd_custom_hid_core.o [1]
+  .bss               zero     0x2000166c     0x4  usbd_custom_hid_core.o [1]
+  .bss               zero     0x20001670     0x4  usbd_custom_hid_core.o [1]
+  .bss               zero     0x20001674     0x4  usbd_pwr.o [1]
+  .bss               zero     0x20001678     0x4  usbd_pwr.o [1]
+  .bss               zero     0x2000167c     0x4  usbd_req.o [1]
+  .bss               zero     0x20001680     0x2  main.o [1]
+  .bss               zero     0x20001682     0x2  MICROWIRE_Memory.o [1]
+  .bss               zero     0x20001684     0x2  RDC2_0026_USB.o [1]
+  .bss               zero     0x20001686     0x2  RDC2_0026_USB.o [1]
+  .bss               zero     0x20001688     0x1  MICROWIRE_Memory.o [1]
+  .bss               zero     0x20001689     0x1  MICROWIRE_Memory.o [1]
+  .bss               zero     0x2000168a     0x1  MICROWIRE_Memory.o [1]
+  .bss               zero     0x2000168b     0x1  MICROWIRE_Memory.o [1]
+  .bss               zero     0x2000168c     0x1  MICROWIRE_Memory.o [1]
+  .bss               zero     0x2000168d     0x1  MICROWIRE_Memory.o [1]
+  .bss               zero     0x2000168e     0x1  usbd_custom_hid_core.o [1]
+  .bss               zero     0x2000168f     0x1  usbd_custom_hid_core.o [1]
+  .bss               zero     0x20001690     0x1  usbd_req.o [1]
+                            - 0x20001691  0x11f1
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x11f1:
+          0x200004a0  0x11f1
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x81 (84% of destination):
+          0x0800390a    0x81
+    1 destination range, total size 0x99:
+          0x20000000    0x99
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+D:\work\ArmProjects\RDC2-0026\Debug\Obj: [1]
+    DataTables.o                          24
+    I2C_Memory.o                904
+    MICROWIRE_Memory.o        1 468                16
+    RDC2_0026_USB.o             520        1      273
+    SPI_Memory.o                744
+    main.o                    2 472        6    4 154
+    startup_stm32f042.o         258
+    stm32f0xx_it.o               28
+    system_stm32f0xx.o          148
+    usb_bsp.o                   276
+    usb_core.o                1 204
+    usb_dcd.o                 1 292                 4
+    usb_dcd_int.o             1 124
+    usbd_core.o                 692       27       32
+    usbd_custom_hid_core.o      498       83      114
+    usbd_desc.o                 284      119       56
+    usbd_ioreq.o                204
+    usbd_pwr.o                  304                 8
+    usbd_req.o                1 526                69
+    usbd_usr.o                   10       17       20
+    -------------------------------------------------
+    Total:                   13 956      277    4 746
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                        8
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                       12
+
+rt6M_tl.a: [4]
+    I32DivModFast.o             224
+    IntDivZer.o                   2
+    cexit.o                      10
+    cmain.o                      26
+    cstartup_M.o                 12
+    data_init.o                  40
+    packbits_init_single.o       60
+    zero_init3.o                 60
+    -------------------------------------------------
+    Total:                      434
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Linker created                        32    1 024
+-----------------------------------------------------
+    Grand Total:             14 422      309    5 770
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x080037d8           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x080037f8           --   Gb  - Linker created -
+?main                   0x08003815          Code  Gb  cmain.o [4]
+ADDRESS                 0x2000167c     0x4  Data  Gb  usbd_req.o [1]
+Address                 0x20001658     0x4  Data  Lc  MICROWIRE_Memory.o [1]
+AddressBits             0x2000168a     0x1  Data  Lc  MICROWIRE_Memory.o [1]
+BitCnt                  0x2000168b     0x1  Data  Lc  MICROWIRE_Memory.o [1]
+BytesNum                0x20001689     0x1  Data  Lc  MICROWIRE_Memory.o [1]
+CSTACK$$Base            0x200000a0           --   Gb  - Linker created -
+CSTACK$$Limit           0x200004a0           --   Gb  - Linker created -
+CTR                     0x080030e5   0x2fe  Code  Gb  usb_dcd_int.o [1]
+ChipSel                 0x20001682     0x2  Data  Lc  MICROWIRE_Memory.o [1]
+ClearDTOG_RX            0x08002d75    0x2e  Code  Gb  usb_core.o [1]
+ClearDTOG_TX            0x08002da3    0x2e  Code  Gb  usb_core.o [1]
+CustomHID_ReportDescriptor
+                        0x080038c8     0x8  Data  Gb  usbd_custom_hid_core.o [1]
+DCD_DevConnect          0x08002541    0x14  Code  Gb  usb_dcd.o [1]
+DCD_EP_Close            0x08002247    0xaa  Code  Gb  usb_dcd.o [1]
+DCD_EP_ClrStall         0x080024a1    0x5c  Code  Gb  usb_dcd.o [1]
+DCD_EP_Open             0x080020f3   0x154  Code  Gb  usb_dcd.o [1]
+DCD_EP_PrepareRx        0x080022f1    0x74  Code  Gb  usb_dcd.o [1]
+DCD_EP_SetAddress       0x080024fd    0x44  Code  Gb  usb_dcd.o [1]
+DCD_EP_Stall            0x08002413    0x8e  Code  Gb  usb_dcd.o [1]
+DCD_EP_Tx               0x08002365    0xae  Code  Gb  usb_dcd.o [1]
+DCD_Init                0x08002061    0x40  Code  Gb  usb_dcd.o [1]
+DCD_PMA_Config          0x080020a5    0x4e  Code  Gb  usb_dcd.o [1]
+DataBuffer              0x200004a0  0x1000  Data  Lc  main.o [1]
+DataBufferPtr           0x20001660     0x4  Data  Lc  RDC2_0026_USB.o [1]
+DataIndex               0x20001686     0x2  Data  Lc  RDC2_0026_USB.o [1]
+DataPos                 0x20001680     0x2  Data  Lc  main.o [1]
+DataPtr                 0x2000165c     0x4  Data  Lc  MICROWIRE_Memory.o [1]
+DataSize                0x2000168c     0x1  Data  Lc  MICROWIRE_Memory.o [1]
+FreeUserBuffer          0x08003019    0x4a  Code  Gb  usb_core.o [1]
+GetENDPOINT             0x08002c4b     0xe  Code  Gb  usb_core.o [1]
+GetEPDblBuf0Count       0x08002fdd    0x1a  Code  Gb  usb_core.o [1]
+GetEPDblBuf1Count       0x08002ffd    0x1a  Code  Gb  usb_core.o [1]
+GetEPRxCount            0x08002e91    0x1a  Code  Gb  usb_core.o [1]
+GetEPTxCount            0x08002e77    0x1a  Code  Gb  usb_core.o [1]
+Get_SerialNum           0x08001fb3    0x30  Code  Gb  usbd_desc.o [1]
+HardFault_Handler       0x080037fb     0x4  Code  Gb  stm32f0xx_it.o [1]
+I2C_Memory_DeInit       0x08000e99    0x38  Code  Gb  I2C_Memory.o [1]
+I2C_Memory_Init         0x08000c71    0x4c  Code  Gb  I2C_Memory.o [1]
+I2C_Memory_IsReady      0x08000ef1    0xd4  Code  Gb  I2C_Memory.o [1]
+I2C_Memory_Read         0x08000d8d   0x10c  Code  Gb  I2C_Memory.o [1]
+I2C_Memory_Write        0x08000cbd    0xd0  Code  Gb  I2C_Memory.o [1]
+I2C_TIMER_PCS           0x080038c0     0x8  Data  Gb  DataTables.o [1]
+I2C_TIMINGR             0x08003890     0xc  Data  Gb  DataTables.o [1]
+IntToUnicode            0x08002019    0x48  Code  Lc  usbd_desc.o [1]
+MICROWIRE_Memory_Clock_Pulse
+                        0x08001765    0x48  Code  Gb  MICROWIRE_Memory.o [1]
+MICROWIRE_Memory_DeInit
+                        0x0800133f    0x2a  Code  Gb  MICROWIRE_Memory.o [1]
+MICROWIRE_Memory_EWEN_EWDS
+                        0x080017bb    0xa8  Code  Gb  MICROWIRE_Memory.o [1]
+MICROWIRE_Memory_Init   0x080012e1    0x26  Code  Gb  MICROWIRE_Memory.o [1]
+MICROWIRE_Memory_IsPresent
+                        0x080017b5     0x6  Code  Gb  MICROWIRE_Memory.o [1]
+MICROWIRE_Memory_IsReady
+                        0x08001369    0xa0  Code  Gb  MICROWIRE_Memory.o [1]
+MICROWIRE_Memory_Read   0x08001323    0x1c  Code  Gb  MICROWIRE_Memory.o [1]
+MICROWIRE_Memory_Write  0x08001307    0x1c  Code  Gb  MICROWIRE_Memory.o [1]
+MICROWIRE_Start_Transfer
+                        0x080016f5    0x66  Code  Gb  MICROWIRE_Memory.o [1]
+MICROWIRE_TIMER_ISR     0x08001441   0x296  Code  Gb  MICROWIRE_Memory.o [1]
+MemChip                 0x20000000     0x4  Data  Lc  main.o [1]
+MemFunc                 0x20000004     0x4  Data  Lc  main.o [1]
+Memory                  0x20001628    0x18  Data  Lc  main.o [1]
+MemoryFunc              0x20001640    0x18  Data  Lc  main.o [1]
+MicroCmd                0x2000168d     0x1  Data  Lc  MICROWIRE_Memory.o [1]
+MicroStatus             0x20001688     0x1  Data  Lc  MICROWIRE_Memory.o [1]
+NMI_Handler             0x080037f9     0x2  Code  Gb  stm32f0xx_it.o [1]
+NVIC_EnableIRQ          0x080000c1     0xe  Code  Lc  main.o [1]
+NVIC_EnableIRQ          0x08001e31     0xe  Code  Lc  usb_bsp.o [1]
+NVIC_SetPriority        0x080000cf    0x84  Code  Lc  main.o [1]
+NVIC_SetPriority        0x08001e3f    0x84  Code  Lc  usb_bsp.o [1]
+PMAToUserBufferCopy     0x080030a5    0x28  Code  Gb  usb_core.o [1]
+PendSV_Handler          0x08003801     0x2  Code  Gb  stm32f0xx_it.o [1]
+PrevXferDone            0x20000098     0x1  Data  Gb  RDC2_0026_USB.o [1]
+RDC2_0026_GetDataPos    0x08000a13     0x4  Code  Gb  main.o [1]
+RDC2_0026_Init          0x080008ed   0x126  Code  Gb  main.o [1]
+RDC2_0026_USB_ClearStatus
+                        0x08000c1d     0xc  Code  Gb  RDC2_0026_USB.o [1]
+RDC2_0026_USB_GetDataIndex
+                        0x08000c3d     0x4  Code  Gb  RDC2_0026_USB.o [1]
+RDC2_0026_USB_GetPacket
+                        0x08000c35     0x4  Code  Gb  RDC2_0026_USB.o [1]
+RDC2_0026_USB_GetStatus
+                        0x08000c19     0x4  Code  Gb  RDC2_0026_USB.o [1]
+RDC2_0026_USB_Init      0x08000a69    0x2e  Code  Gb  RDC2_0026_USB.o [1]
+RDC2_0026_USB_IsReadyToSend
+                        0x08000c39     0x4  Code  Gb  RDC2_0026_USB.o [1]
+RDC2_0026_USB_RecPacket
+                        0x08000a97   0x15c  Code  Gb  RDC2_0026_USB.o [1]
+RDC2_0026_USB_SendData  0x08000bf3    0x26  Code  Gb  RDC2_0026_USB.o [1]
+RDC2_0026_USB_SetStatus
+                        0x08000c29     0xc  Code  Gb  RDC2_0026_USB.o [1]
+Region$$Table$$Base     0x080037d8           --   Gb  - Linker created -
+Region$$Table$$Limit    0x080037f8           --   Gb  - Linker created -
+Report_buf              0x200015a8    0x40  Data  Lc  usbd_custom_hid_core.o [1]
+Resume                  0x0800358b    0xd8  Code  Gb  usbd_pwr.o [1]
+ResumeS                 0x20001674     0x4  Data  Gb  usbd_pwr.o [1]
+Resume_Init             0x0800356f    0x1c  Code  Gb  usbd_pwr.o [1]
+SPI_CHIP_SEL_OUT        0x080038d8     0x4  Data  Gb  DataTables.o [1]
+SPI_Memory_DeInit       0x080011c3    0x12  Code  Gb  SPI_Memory.o [1]
+SPI_Memory_Erase        0x08001291    0x3a  Code  Gb  SPI_Memory.o [1]
+SPI_Memory_Init         0x08000ff9    0x42  Code  Gb  SPI_Memory.o [1]
+SPI_Memory_IsPresent    0x080011f5    0x9c  Code  Gb  SPI_Memory.o [1]
+SPI_Memory_IsReady      0x080011a1    0x22  Code  Gb  SPI_Memory.o [1]
+SPI_Memory_Read         0x080010c7    0x6e  Code  Gb  SPI_Memory.o [1]
+SPI_Memory_ReadStatus   0x08001135    0x2a  Code  Gb  SPI_Memory.o [1]
+SPI_Memory_Write        0x0800103b    0x8c  Code  Gb  SPI_Memory.o [1]
+SPI_Memory_WriteStatus  0x0800115f    0x42  Code  Gb  SPI_Memory.o [1]
+SPI_Send                0x080011d5    0x20  Code  Gb  SPI_Memory.o [1]
+SVC_Handler             0x080037ff     0x2  Code  Gb  stm32f0xx_it.o [1]
+SetBTABLE               0x08002c41     0xa  Code  Gb  usb_core.o [1]
+SetCNTR                 0x08002c31     0x8  Code  Gb  usb_core.o [1]
+SetEPDblBuffAddr        0x08002ead    0x3e  Code  Gb  usb_core.o [1]
+SetEPDblBuffCount       0x08002efd    0xd4  Code  Gb  usb_core.o [1]
+SetEPDoubleBuff         0x08002cef    0x20  Code  Gb  usb_core.o [1]
+SetEPRxAddr             0x08002df9    0x1e  Code  Gb  usb_core.o [1]
+SetEPRxCount            0x08002e2d    0x4a  Code  Gb  usb_core.o [1]
+SetEPRxStatus           0x08002cb3    0x3c  Code  Gb  usb_core.o [1]
+SetEPTxAddr             0x08002dd1    0x1e  Code  Gb  usb_core.o [1]
+SetEPTxCount            0x08002e17    0x16  Code  Gb  usb_core.o [1]
+SetEPTxStatus           0x08002c7b    0x38  Code  Gb  usb_core.o [1]
+SetEPType               0x08002c59    0x22  Code  Gb  usb_core.o [1]
+SetISTR                 0x08002c39     0x8  Code  Gb  usb_core.o [1]
+Suspend                 0x08003549    0x26  Code  Gb  usbd_pwr.o [1]
+SysTick_Handler         0x08003803     0x2  Code  Gb  stm32f0xx_it.o [1]
+SystemInit              0x08003679    0x68  Code  Gb  system_stm32f0xx.o [1]
+TIM17_IRQHandler        0x0800380d     0x8  Code  Gb  stm32f0xx_it.o [1]
+ToggleDTOG_RX           0x08002d2d    0x1e  Code  Gb  usb_core.o [1]
+ToggleDTOG_TX           0x08002d55    0x1e  Code  Gb  usb_core.o [1]
+USBD_ClrCfg             0x08001c19    0x18  Code  Gb  usbd_core.o [1]
+USBD_ClrFeature         0x08002a8f    0x36  Code  Lc  usbd_req.o [1]
+USBD_CtlContinueRx      0x08002bd9    0x1e  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlContinueSendData
+                        0x08002b8d    0x1e  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlError           0x08002af5    0x10  Code  Gb  usbd_req.o [1]
+USBD_CtlPrepareRx       0x08002bab    0x2e  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlReceiveStatus   0x08002c13    0x1c  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendData        0x08002b63    0x2a  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendStatus      0x08002bf7    0x1c  Code  Gb  usbd_ioreq.o [1]
+USBD_DCD_INT_cb         0x20000008    0x1c  Data  Gb  usbd_core.o [1]
+USBD_DCD_INT_fops       0x20000024     0x4  Data  Gb  usbd_core.o [1]
+USBD_DataInStage        0x08001a9d    0xc8  Code  Lc  usbd_core.o [1]
+USBD_DataOutStage       0x08001a17    0x86  Code  Lc  usbd_core.o [1]
+USBD_DeInit             0x080019bf     0x6  Code  Gb  usbd_core.o [1]
+USBD_DeviceDesc         0x0800385c    0x14  Data  Gb  usbd_desc.o [1]
+USBD_GetConfig          0x080029e9    0x48  Code  Lc  usbd_req.o [1]
+USBD_GetDescriptor      0x08002797   0x140  Code  Lc  usbd_req.o [1]
+USBD_GetLen             0x08002b4d    0x16  Code  Lc  usbd_req.o [1]
+USBD_GetStatus          0x08002a31    0x3a  Code  Lc  usbd_req.o [1]
+USBD_GetString          0x08002b05    0x48  Code  Gb  usbd_req.o [1]
+USBD_HID_AltSet         0x20001668     0x4  Data  Lc  usbd_custom_hid_core.o [1]
+USBD_HID_CfgDesc        0x08003784    0x2c  Data  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_DataIn         0x08001dc5    0x14  Code  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_DataOut        0x08001dd9    0x1c  Code  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_DeInit         0x08001c7b    0x1a  Code  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_EP0_RxReady    0x08001e1d     0x6  Code  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_GetCfgDesc     0x08001dbb     0xa  Code  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_IdleState      0x20001670     0x4  Data  Lc  usbd_custom_hid_core.o [1]
+USBD_HID_Init           0x08001c31    0x4a  Code  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_Protocol       0x2000166c     0x4  Data  Lc  usbd_custom_hid_core.o [1]
+USBD_HID_Report_ID      0x2000168e     0x1  Data  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_SendReport     0x08001d9b    0x20  Code  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_Setup          0x08001c95   0x106  Code  Gb  usbd_custom_hid_core.o [1]
+USBD_HID_cb             0x20000028    0x24  Data  Gb  usbd_custom_hid_core.o [1]
+USBD_Init               0x0800197d    0x42  Code  Gb  usbd_core.o [1]
+USBD_LangIDDesc         0x080038dc     0x4  Data  Gb  usbd_desc.o [1]
+USBD_ParseSetupRequest  0x08002ac5    0x30  Code  Gb  usbd_req.o [1]
+USBD_Reset              0x08001b69    0x48  Code  Lc  usbd_core.o [1]
+USBD_Resume             0x08001bb1    0x14  Code  Lc  usbd_core.o [1]
+USBD_SOF                0x08001bdd    0x1c  Code  Lc  usbd_core.o [1]
+USBD_SetAddress         0x080028d7    0x54  Code  Lc  usbd_req.o [1]
+USBD_SetCfg             0x08001bf9    0x20  Code  Gb  usbd_core.o [1]
+USBD_SetConfig          0x0800292b    0xb6  Code  Lc  usbd_req.o [1]
+USBD_SetConfig::cfgidx  0x20001690     0x1  Data  Lc  usbd_req.o [1]
+USBD_SetFeature         0x08002a6b    0x24  Code  Lc  usbd_req.o [1]
+USBD_SetupStage         0x080019c5    0x52  Code  Lc  usbd_core.o [1]
+USBD_StdDevReq          0x0800256d    0x7c  Code  Gb  usbd_req.o [1]
+USBD_StdEPReq           0x08002639   0x15e  Code  Gb  usbd_req.o [1]
+USBD_StdItfReq          0x080025e9    0x50  Code  Gb  usbd_req.o [1]
+USBD_StrDesc            0x200015e8    0x40  Data  Gb  usbd_req.o [1]
+USBD_StringSerial       0x20000068    0x1c  Data  Gb  usbd_desc.o [1]
+USBD_Suspend            0x08001bc5    0x18  Code  Lc  usbd_core.o [1]
+USBD_USR_ConfigStrDescriptor
+                        0x08001f8b    0x14  Code  Gb  usbd_desc.o [1]
+USBD_USR_DeviceConfigured
+                        0x08001e27     0x2  Code  Gb  usbd_usr.o [1]
+USBD_USR_DeviceDescriptor
+                        0x08001f45     0xa  Code  Gb  usbd_desc.o [1]
+USBD_USR_DeviceReset    0x08001e25     0x2  Code  Gb  usbd_usr.o [1]
+USBD_USR_DeviceResumed  0x08001e2b     0x2  Code  Gb  usbd_usr.o [1]
+USBD_USR_DeviceSuspended
+                        0x08001e29     0x2  Code  Gb  usbd_usr.o [1]
+USBD_USR_Init           0x08001e23     0x2  Code  Gb  usbd_usr.o [1]
+USBD_USR_InterfaceStrDescriptor
+                        0x08001f9f    0x14  Code  Gb  usbd_desc.o [1]
+USBD_USR_LangIDStrDescriptor
+                        0x08001f4f     0xa  Code  Gb  usbd_desc.o [1]
+USBD_USR_ManufacturerStrDescriptor
+                        0x08001f6d    0x14  Code  Gb  usbd_desc.o [1]
+USBD_USR_ProductStrDescriptor
+                        0x08001f59    0x14  Code  Gb  usbd_desc.o [1]
+USBD_USR_SerialStrDescriptor
+                        0x08001f81     0xa  Code  Gb  usbd_desc.o [1]
+USBDataBuf              0x20001568    0x40  Data  Lc  RDC2_0026_USB.o [1]
+USBStatus               0x20001684     0x2  Data  Lc  RDC2_0026_USB.o [1]
+USB_BSP_EnableInterrupt
+                        0x08001f31    0x14  Code  Gb  usb_bsp.o [1]
+USB_BSP_Init            0x08001ec3    0x50  Code  Gb  usb_bsp.o [1]
+USB_Device_dev          0x200014a0    0xc8  Data  Gb  RDC2_0026_USB.o [1]
+USB_IRQHandler          0x08003805     0x8  Code  Gb  stm32f0xx_it.o [1]
+USB_Istr                0x08003419   0x106  Code  Gb  usb_dcd_int.o [1]
+USR_cb                  0x20000084    0x14  Data  Gb  usbd_usr.o [1]
+USR_desc                0x2000004c    0x1c  Data  Gb  usbd_desc.o [1]
+UserToPMABufferCopy     0x08003063    0x38  Code  Gb  usb_core.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x200017ff           --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000           --   Gb  command line/config [2]
+__aeabi_idiv            0x080018c9          Code  Gb  I32DivModFast.o [4]
+__aeabi_idiv0           0x08001e2d          Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod         0x080018c9          Code  Gb  I32DivModFast.o [4]
+__aeabi_uidiv           0x080018cf          Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x080018cf          Code  Gb  I32DivModFast.o [4]
+__cmain                 0x08003815          Code  Gb  cmain.o [4]
+__exit                  0x08003849    0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x080037b1    0x28  Code  Gb  data_init.o [4]
+__iar_packbits_init_single3
+                        0x08003749    0x3c  Code  Gb  packbits_init_single.o [4]
+__iar_program_start     0x080038b5          Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x0800370d    0x3c  Code  Gb  zero_init3.o [4]
+__low_level_init        0x0800382f     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000          Data  Gb  startup_stm32f042.o [1]
+_call_main              0x08003821          Code  Gb  cmain.o [4]
+_exit                   0x0800383d          Code  Gb  cexit.o [4]
+_main                   0x0800382b          Code  Gb  cmain.o [4]
+exit                    0x08003833     0x8  Code  Gb  exit.o [3]
+flag                    0x2000168f     0x1  Data  Gb  usbd_custom_hid_core.o [1]
+main                    0x08000161   0x784  Code  Gb  main.o [1]
+remotewakeupon          0x20001678     0x4  Data  Gb  usbd_pwr.o [1]
+wInterrupt_Mask         0x20001664     0x4  Data  Gb  usb_dcd.o [1]
+
+
+[1] = D:\work\ArmProjects\RDC2-0026\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  14 422 bytes of readonly  code memory
+     309 bytes of readonly  data memory
+   5 770 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
